@@ -1,0 +1,99 @@
+
+
+.app-atachment{
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    /* margin: 10% 0; */
+}
+.app-atachment::-webkit-scrollbar{
+    display: none;
+}
+.app-atachment .sbox{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.app-atachment .sbox .img::-webkit-scrollbar{
+    display: none;
+}
+.app-atachment .sbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.app-atachment .sbox h3{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: gray;
+    width: 110px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    font-weight: 400;
+    /* border: 1px solid black; */
+}
+
+
+/* responsive */
+
+@media only screen and (max-width:875px){
+    .app-atachment .sbox h3{
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width:660px){
+    .app-atachment{
+        height: 30%;
+    }
+    .app-atachment .sbox  h3{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .app-atachment .sbox h3{
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .app-atachment{
+        height: auto;
+        display: block;
+        padding-left: 30px;
+    }
+    .app-atachment .sbox{
+        width: 40%;
+        height: 50%;
+        margin: 10px 10px;
+        display: inline-flex;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .app-atachment{
+        padding: 0;
+    }
+    .app-atachment::-webkit-scrollbar{
+        display: none;
+    }
+    .app-atachment .sbox{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 1% auto;
+    }
+    .app-atachment .sbox::-webkit-scrollbar{
+        display: none;
+    }
+    .app-atachment .sbox .img::-webkit-scrollbar{
+        display: none;
+    }
+}

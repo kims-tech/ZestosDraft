@@ -1,0 +1,213 @@
+
+.design-tab{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, #f9f9f9 , white
+    );
+}
+
+
+/* text section */
+.design-tab .text-section{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+.design-tab#dt2 .text-section{
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+
+.design-tab .text-section h1{
+    font-size: 2.4rem;
+    margin-bottom: 1%;
+}
+.design-tab .text-section h1 span{
+    font-size: 2rem;
+    color: #60c3ad;
+}
+.design-tab .text-section h2{
+    font-size: 2rem;
+    margin-bottom: 3%;
+    color: #60c3ad;
+}
+.design-tab .text-section p{
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #616464;
+    font-family: 'Louize',sans-serif;
+    /* border: 1px solid black; */
+}
+
+
+/* image section */
+.design-tab .img-section,
+.design-tab .text-section .hidden
+{
+    width: 50%;
+    height: 80%;
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    
+}
+.design-tab .text-section .hidden{
+    display: none;
+}
+.design-tab .img-section img{
+    
+    width: 75%;
+    height: auto;
+    margin-right: 5%;
+    display: block;
+    margin: auto auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* border: 1px solid black; */
+}
+
+
+/* responsive css */
+
+@media only screen and (max-width:1125px){
+    .design-tab .text-section h1{
+        font-size: 2.2rem;
+    }
+    .design-tab .text-section h2{
+        font-size: 1.8rem;
+    }
+    .design-tab .text-section p{
+        width: 90%;
+        font-size: 1.1rem;
+    }
+ }
+
+ @media only screen and (max-width:1195px){
+    .design-tab .img-section #pic-2{
+        top: 10%;
+    }
+    .design-tab .img-section #pic-1{
+        top: 30%;
+    }
+ }
+
+ @media only screen and (max-width:1024px){
+    .design-tab .text-section p{
+        font-size: 1rem;
+    }
+    .design-tab .text-section{
+        padding-left: 5%;
+    }
+    .design-tab#dt2 .text-section{
+        padding-right: 5%;
+    }
+ }
+
+ @media only screen and (max-width:955px){
+    .design-tab .text-section h1{
+        font-size: 2rem;
+    }
+    .design-tab .text-section h2{
+        font-size: 1.5rem;
+    }
+ }
+
+ @media only screen and (max-width:870px){
+    .design-tab .text-section{
+        padding-left: 3%;
+    }
+ }
+
+ @media only screen and (max-width:830px){
+    .design-tab .text-section h1{
+        font-size: 1.7rem;
+    }
+    .design-tab .text-section h1 span{
+        font-size: 1.5rem;
+    }
+    .design-tab .text-section h2{
+        font-size: 1.3rem;
+    }
+    .design-tab#dt2 .text-section p{
+        width: 100%;
+    }
+ }
+
+ @media only screen and (max-width:795px){
+    .design-tab .img-section #pic-2{
+        top: 10%;
+        right: 8%;
+        width: 50%;
+    }
+    .design-tab .img-section #pic-1{
+        top: 30%;
+        width: 60%;
+    }
+    .design-tab .img-section .img-col{
+        width: 45%;
+    }
+ }
+
+ @media only screen and (max-width:750px){
+   .design-tab#dt2 .img-section img,
+   .design-tab .img-section .img-col{
+        height: 80%;
+    }
+    
+ }
+
+/* alignment change */
+@media only screen and (max-width:710px){
+    .design-tab{
+        height: 100%;
+    }
+    .design-tab .text-section{
+        width: 100%;
+        height: 100%;
+        padding-top: 1%;
+        align-items: center;
+    }
+    .design-tab .text-section .hidden{
+        width: 70%;
+        height: 60%;
+        display: flex;
+    }
+    .design-tab .text-section p{
+        margin-top: 3%;
+    }
+
+
+    .design-tab .img-section{
+        display: none;
+    }
+ }
+
+ @media only screen and (max-width:595px){
+    .design-tab .img-section img{
+        width: 80%;
+    }
+ }
+
+ @media only screen and (max-width:560px){
+    .design-tab.text-section .hidden{
+       height: 40%;
+    }
+ }
+
+ @media only screen and (max-width:440px){    
+    .design-tab#dt2 .text-section .hidden,
+    .design-tab .text-section .hidden {
+        width: 100%;
+    }
+ }
